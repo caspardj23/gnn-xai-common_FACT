@@ -11,7 +11,8 @@ from .base_graph_dataset import BaseGraphDataset
 class RomeDataset(BaseGraphDataset):
     def __init__(self, *,
                  name='Rome',
-                 url='http://www.graphdrawing.org/download/rome-graphml.tgz',
+                 # url='http://www.graphdrawing.org/download/rome-graphml.tgz',
+                 url='https://zenodo.org/records/6510069/files/rome-graphml.tgz?download=1'
                  **kwargs):
         self.url = url
         super().__init__(name=name, **kwargs)
